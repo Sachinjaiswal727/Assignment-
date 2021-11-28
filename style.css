@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.Food{
+    height: 100vh;
+    background-image: url(Background.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    opacity: 10;
+}
+.nav-bar
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: left;
+    top: 0;
+    left: 0;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10 30px;
+    top: 0;
+    right: 0;
+    position: relative;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform:uppercase ;
+    font-size: 35px;
+    font-weight: 200;
+    font-family: cursive;
+}
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(238, 164, 52);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 60px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+}
+button:hover {background-color: yellowgreen}
+.row
+{
+    display: flex;
+    height: 108%;
+    align-items: center;
+    position: absolute;
+}
+.info
+{
+    flex-basis: 70%;
+    align-items: center;
+}
+.Info h1
+{
+    color: white;
+    font-size: 200px;
+}
+.Info p
+{
+    color:white ;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card
+{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    color: gold;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.card1{
+    background-image: url(chicken.jpg);
+}
+.card2{
+    background-image: url(panner.png);
+}
+.card3{
+    background-image: url(Burger.jpg);
+}
+.card4{
+    background-image: url(shake.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
